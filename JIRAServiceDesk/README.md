@@ -2,7 +2,7 @@
 
 The main target of this basic guide, is tho show how to developt a SmartResponse integrated with an external tool (JIRA).  This plugin is written in PowerShell.
 
-## What does the SmarResponse plugin do?
+## What does the SmartResponse plugin do?
 
 When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name params and create an issue into the JIRA Service Desk, using a dedicated project to group all the LogRhyrhtm issues.
 
@@ -20,7 +20,7 @@ When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name p
 
 3. Plugin development.
    
-  * Create the Payload. The payload consists of executables, scripts, and other supporting file types. The payload defines the actions that are taken by the SmartResponse after initiation. Our SmartResponse will have onlly one action, create an issue. The payload is very simple and Note that some error handling, argument validation and other logic has been simplified or removed for this guide.
+  * Create the Payload. The payload consists of executables, scripts, and other supporting file types. The payload defines the actions that are taken by the SmartResponse after initiation. Our SmartResponse will only have one action, create an issue. The payload is very simple and Note that some error handling, argument validation and other logic has been simplified or removed for this guide.
 
 ```powershell
 # main.ps1
@@ -104,7 +104,7 @@ $response = Invoke-RestMethod -Uri 'https://logrhythm-sr-dev.atlassian.net/rest/
 Write-Output $response
 
 ```
-  * Create the Configuration File. The configuration file indicates the input and output parameters of the SmartResponse Plugin and tells the SIEM how to activate the response. This plugin will tanke two params: the Alarm ID and Alarm Rule Name
+  * Create the Configuration File. The configuration file indicates the input and output parameters of the SmartResponse Plugin and tells the SIEM how to activate the response. This plugin will take two params: the Alarm ID and Alarm Rule Name
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>
 <remv1:Remediation-Plugin xmlns:remv1="RemediationVersion1.xsd" Name="JIRA Issues" Guid="00000000-0000-0000-0000-100000000000" Version="1" IsLogRhythmPlugin="false">
