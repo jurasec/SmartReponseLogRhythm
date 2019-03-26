@@ -143,4 +143,4 @@ Issue details.
 
 ![](/JIRAServiceDesk/images/JIRAIssueDetails.PNG)
 
-If you have any comments, feel free to email me <jurasec@gmail.com>
+If you have any comments, feel free to contact me <jurasec@gmail.com>
