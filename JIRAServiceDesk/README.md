@@ -16,7 +16,7 @@ When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name p
 
 1. Create a JIRA Service Desk user account.
 2. Create a new JIRA project, and remember what **_key_** indentifies the new project.
-![Alt text](/JIRASeriveDesk/images/JiraProjects.PNG)
+![](/JIRAServiceDesk/images/JiraProjects.PNG)
 
 3. Plugin development.
    
@@ -123,3 +123,24 @@ Write-Output $response
     </remv1:Action>
 </remv1:Remediation-Plugin>
 ```
+
+4. Alarm Configuration. Open the tab configuration alarm desired and set the action named like JIRA Issue: **Create an issue**.
+![](/JIRAServiceDesk/images/AlarmConf.PNG)
+
+If all is ok. We will see an Smart Response successfully executed.
+
+![](/JIRAServiceDesk/images/alarm.PNG)
+
+The _inspector_ tab shows aditional execution output.
+
+![](/JIRAServiceDesk/images/SmartResponseActions.PNG)
+
+Now, JIRA should have all the issue created.
+
+![](/JIRAServiceDesk/images/JiraIssues.PNG)
+
+Issue details.
+
+![](/JIRAServiceDesk/images/JIRAIssueDetails.PNG)
+
+If you have any comments, feel free to email me <jurasec@gmail.com>
