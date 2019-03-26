@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<remv1:Remediation-Plugin xmlns:remv1="RemediationVersion1.xsd" Name="JIRA Issues" Guid="00000000-0000-0000-0000-100000000001" Version="1" IsLogRhythmPlugin="false">
+    <remv1:Action Name="Create an issue" Command="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe">
+        <remv1:ConstantParameter Name="Script" Switch="-file main.ps1" Order="1" />
+        <!--remv1:StringParameter Name="JiraProject" Switch="" Order="2" /-->
+        <remv1:StringParameter Name="AlarmId" Switch="" Order="2"> 
+            <remv1:DefaultInput>
+                <remv1:AlarmId  />
+            </remv1:DefaultInput>
+        </remv1:StringParameter>
+        <remv1:StringParameter Name="AlarmRuleName" Switch="" Order="3"> 
+            <remv1:DefaultInput>
+                <remv1:AlarmRuleName  />
+            </remv1:DefaultInput>
+        </remv1:StringParameter>
+    </remv1:Action>
+</remv1:Remediation-Plugin>
