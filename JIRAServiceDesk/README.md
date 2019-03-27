@@ -15,8 +15,11 @@ When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name p
 ## Steps.
 
 1. Create a JIRA Service Desk user account.
-2. Create a new JIRA project, and remember what **_key_** indentifies the new project.
+2. Create a new JIRA project, and remember what **_key_** indentifies the new project, you will need it.  
 ![](/JIRAServiceDesk/images/JiraProjects.PNG)
+
+The API URL that creates an issue is your URL_home/rest/api/3/issue via POST more info in this link https://developer.atlassian.com/cloud/jira/platform/rest/v3/#api-rest-api-3-issue-post.
+My URL Home is https://logrhythm-sr-dev.atlassian.net
 
 3. Plugin development.
    
@@ -40,6 +43,7 @@ Param(
 
 #### Issue tittle
 $summary = $alarmRuleName + 'ID [' + $alarmID + ']'
+# key project
 $keyProject = 'LR'
 #### $issueTypeId 1 = 'Incident'
 $issueTypeId = '10001'
