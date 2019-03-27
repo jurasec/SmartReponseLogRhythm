@@ -1,6 +1,6 @@
-# LogRhythm SmartResponse Plugin for JIRA Service Desk integration: A basic guide.
+# LogRhythm SmartResponse Plugin for JIRA Service Desk integration: A basic developt guide.
 
-The main target of this basic guide, is tho show how to developt a SmartResponse integrated with an external tool (JIRA).  This plugin is written in PowerShell.
+The main target of this basic guide, is tho show how to developt a SmartResponse integrated with an external tool (JIRA). As you know there is an excelent and complete **Develop SmartResponse Plugins Guide**. This plugin is written in PowerShell.
 
 ## What does the SmartResponse plugin do?
 
