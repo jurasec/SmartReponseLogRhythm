@@ -1,10 +1,10 @@
 # LogRhythm SmartResponse Plugin for JIRA Service Desk integration: A basic developt guide.
 
-The main target of this basic guide, is tho show how to developt a SmartResponse integrated with an external tool (JIRA). As you know there is an excelent and complete **Develop SmartResponse Plugins Guide**. This plugin is written in PowerShell.
+The main target of this basic guide, is to show how to develop a SmartResponse integrated with an external tool (JIRA). As you know there is an excellent and complete **Develop SmartResponse Plugins Guide**. This plugin is written in PowerShell.
 
 ## What does the SmartResponse plugin do?
 
-When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name params and create an issue into the JIRA Service Desk, using a dedicated project to group all the LogRhyrhtm issues.
+When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name params and creates an issue into the JIRA Service Desk, using a dedicated project to group all the LogRhyrhtm issues.
 
 ## Requirements:
 
@@ -15,7 +15,7 @@ When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name p
 ## Steps.
 
 1. Create a JIRA Service Desk user account.
-2. Create a new JIRA project, and remember what **_key_** indentifies the new project, you will need it.  
+2. Create a new JIRA project, and remember what **_key_** identifies the new project, you will need it.  
 ![](/JIRAServiceDesk/images/JiraProjects.PNG)
 
 The API URL that creates an issue is your **URL_home/rest/api/3/issue** via POST more info in this link https://developer.atlassian.com/cloud/jira/platform/rest/v3/#api-rest-api-3-issue-post.
@@ -131,15 +131,15 @@ Write-Output $response
 4. Alarm Configuration. Open the tab configuration alarm desired and set the action named like JIRA Issue: **Create an issue**.
 ![](/JIRAServiceDesk/images/AlarmConf.PNG)
 
-If all is ok. We will see an Smart Response successfully executed.
+If everything is ok, we will see an Smart Response successfully executed.
 
 ![](/JIRAServiceDesk/images/alarm.PNG)
 
-The _inspector_ tab shows aditional execution output.
+The _inspector_ tab shows additional execution output.
 
 ![](/JIRAServiceDesk/images/SmartResponseActions.PNG)
 
-Now, JIRA should have all the issue created.
+Now, JIRA should have all the issues created.
 
 ![](/JIRAServiceDesk/images/JiraIssues.PNG)
 
