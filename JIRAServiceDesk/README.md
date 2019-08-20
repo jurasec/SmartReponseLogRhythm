@@ -4,7 +4,7 @@ The main target of this basic guide, is to show how to develop a SmartResponse i
 
 ## What does the SmartResponse plugin do?
 
-When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name params and creates an issue into the JIRA Service Desk, using a dedicated project to group all the LogRhyrhtm issues.
+When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name params and creates an issue into the JIRA Service Desk, using a dedicated project to group all the LogRhythm issues.
 
 ## Requirements:
 
