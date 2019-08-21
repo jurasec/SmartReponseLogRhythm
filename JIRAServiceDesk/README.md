@@ -8,7 +8,7 @@ When the SmartResponse is triggered, it takes the Alarm Id and Alarm Rule Name p
 
 ## Requirements:
 
-1. Create a Jira Serice Desk account and create a new project. The new project is optional, it's just for a better ticket's organization.
+1. Create a Jira Service Desk account and create a new project. The new project is optional, it's just for a better ticket's organization.
 2. A LogRhythm Enviroment to test and create the SmartResponse Plugin.
 3. Your favorite Code Editor. 
 
